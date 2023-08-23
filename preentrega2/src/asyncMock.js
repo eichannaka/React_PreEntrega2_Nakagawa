@@ -41,3 +41,11 @@ export const getProductsById=(productId)=>{
         },500)
     })
 }
+export const getProductsByCategory=(productCategory)=>{
+    return new Promise((resolve)=>{
+        
+        setTimeout(()=>{
+                resolve(products.map(prod=>prod.category===productCategory))
+        },500)
+    })
+}

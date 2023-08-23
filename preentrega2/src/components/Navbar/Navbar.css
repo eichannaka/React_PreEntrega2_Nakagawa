@@ -1,34 +1,50 @@
-/* NavBar styles */
 .nav-bar {
-    flex-direction: row;
-    background-color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-list {
-    flex-direction: row-reverse;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-item {
-    margin: 0 10px;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
 
-  a{
-    font-size: large;
-    color: white;
-    text-decoration: none;
-  }
-  .titulo{
-    color: #9c7710;
-    margin:5px;
-  }
+.NavBar-link {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.Categories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.option {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.option:hover {
+  color: #ffca28;
+}
+
+.ActiveOption {
+  color: #f8d86e;
+  text-decoration: none;
+}
+
+.CartWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.Ecommerce {
+  text-decoration: none;
+  color: wheat;
+  margin-left: 20px;
+}
