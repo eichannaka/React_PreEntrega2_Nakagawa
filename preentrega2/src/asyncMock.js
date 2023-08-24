@@ -45,7 +45,7 @@ export const getProductsByCategory=(productCategory)=>{
     return new Promise((resolve)=>{
         
         setTimeout(()=>{
-                resolve(products.map(prod=>prod.category===productCategory))
+                resolve(products.filter(prod=>prod.category===productCategory))
         },500)
     })
 }
